@@ -9,9 +9,9 @@ Plug 'kowsmo7/window-picker.nvim'
 
 ### Configuration
 ```lua
-local pickwin = require("pickwin")
+local window_picker = require("window-picker")
 
-pickwin.setup({
+window_picker.setup({
     -- Characters used to pick windows, in order of appearance.
     chars = "abcdefg",
 
@@ -34,7 +34,7 @@ pickwin.setup({
 })
 
 -- Use any mapping you wish.
-vim.cmd("nnoremap <silent> <Space>w :lua require(\"pickwin\").pick()<CR>")
+vim.cmd("nnoremap <silent> <Space>w :lua require(\"window-picker\").pick()<CR>")
 ```
 
 ### Credits
